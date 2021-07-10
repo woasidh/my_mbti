@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/:randomStr', function(req, res, next){
+  res.send('jijo');
+});
+
 module.exports = router;
